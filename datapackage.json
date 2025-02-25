@@ -1,0 +1,38 @@
+{
+    "name": "henry-hub-gas-prices",
+    "title": "Henry Hub Natural Gas Prices",
+    "description": "Daily and monthly natural gas prices from the EIA.",
+    "version": "1.0.0",
+    "keywords": ["natural gas", "prices", "energy"],
+    "licenses": [
+        {
+            "name": "ODC-PDDL-1.0",
+            "path": "https://opendatacommons.org/licenses/pddl/",
+            "title": "Public Domain Dedication and License"
+        }
+    ],
+    "resources": [
+        {
+            "name": "daily_prices",
+            "path": "Henry Hub Gas Price Daily.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {"name": "Date", "type": "date"},
+                    {"name": "Price", "type": "number"}
+                ]
+            }
+        },
+        {
+            "name": "monthly_prices",
+            "path": "Henry Hub Gas Price Monthly.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {"name": "Date", "type": "date"},
+                    {"name": "Price", "type": "number"}
+                ]
+            }
+        }
+    ]
+}
